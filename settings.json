@@ -73,5 +73,33 @@
 
   // --- TERMINAL ---
   "terminal.integrated.fontFamily": "'JetBrains Mono', monospace",
-  "terminal.integrated.cursorBlinking": true
+  "terminal.integrated.cursorBlinking": true,
+  // --- GITHUB COPILOT CORE ---
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": false // Disable in git commit window if you prefer manual commits
+  },
+  
+  // --- NEXT EDIT SUGGESTIONS (The "Future" Feature) ---
+  // This predicts your NEXT cursor jump and edit, not just the current line.
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "editor.inlineSuggest.enabled": true,
+
+  // --- CHAT & AGENT BEHAVIOR ---
+  "github.copilot.chat.localeOverride": "en", // Force English for better accuracy
+  "github.copilot.editor.enableCodeActions": true, // Adds "Fix with Copilot" to the lightbulb menu
+  
+  // --- TERMINAL INTEGRATION ---
+  "github.copilot.terminal.useChat": true, // Enables Copilot in the terminal (Ctrl+I in terminal)
+  "github.copilot.chat.terminalChatLocation": "chatView", 
+
+  // --- INLINE CHAT (Cmd+I / Ctrl+I) ---
+  "inlineChat.mode": "live", // "live" shows changes instantly as it types (vs "preview")
+  "inlineChat.finishOnType": false, // Prevents closing the chat session just because you tapped a key
+  
+  // --- EXPERIMENTAL / ADVANCED ---
+  // If your version supports it, this allows Copilot to read your current error logs automatically
+  "github.copilot.advanced.useProjectContext": true
 }
