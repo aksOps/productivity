@@ -1,0 +1,77 @@
+{
+  // --- VISUAL TWEAKS (IntelliJ-like cleanliness) ---
+  "editor.fontFamily": "'JetBrains Mono', 'Fira Code', Consolas, monospace", // Highly recommended to install JetBrains Mono font
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.lineHeight": 1.5,
+  "editor.minimap.enabled": false, // Disables the mini-code view on the right (cleaner)
+  "editor.renderWhitespace": "selection",
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "workbench.iconTheme": "material-icon-theme", // Requires 'Material Icon Theme' extension
+  "workbench.sideBar.location": "left",
+  "editor.guides.bracketPairs": true, // Visual lines connecting brackets
+  "editor.bracketPairColorization.enabled": true,
+
+  // --- CORE BEHAVIOR (The "It Just Works" Feel) ---
+  "editor.formatOnSave": true, // Essential
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit" // Auto-remove unused imports on save
+  },
+  "files.autoSave": "afterDelay", // Optional: mimics IntelliJ's auto-save
+  "files.autoSaveDelay": 1000,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "explorer.confirmDragAndDrop": false,
+
+  // --- JAVA SPECIFIC ---
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml", // Uses Google Style Guide by default
+  "java.debug.settings.showHex": true,
+  "java.completion.guessMethodArguments": true, // Autofills variable names in method calls
+
+  // --- GOLANG SPECIFIC ---
+  "[go]": {
+    "editor.defaultFormatter": "golang.go",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  "go.useLanguageServer": true,
+  "go.lintTool": "golangci-lint",
+
+  // --- PYTHON SPECIFIC ---
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff", // If using Ruff extension
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  "python.analysis.typeCheckingMode": "basic", // Similar to PyCharm's inspection level
+  "python.analysis.autoImportCompletions": true,
+
+  // --- JAVASCRIPT / REACT / TYPESCRIPT ---
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always", // Updates import paths when you move files
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "prettier.singleQuote": true, // Common preference
+  "prettier.semi": true,
+
+  // --- TERMINAL ---
+  "terminal.integrated.fontFamily": "'JetBrains Mono', monospace",
+  "terminal.integrated.cursorBlinking": true
+}
